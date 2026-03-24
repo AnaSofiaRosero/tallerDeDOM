@@ -1,0 +1,108 @@
+/* Fondo general */
+body {
+    font-family: 'sans-serif';
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+#app-container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Contenedor input con el botón vertical */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+/* Input */
+#task-input {
+    width: 100%; 
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 10px; 
+}
+
+#task-input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102,126,234,0.5);
+}
+
+/* Botón para agregar */
+#add-task-btn {
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#add-task-btn:hover {
+    background: #5a67d8;
+    transform: scale(1.03);
+}
+
+/* mi lista */
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* aqui para cada tarea */
+.task-item {
+    background: #f4f4f4;
+    padding: 12px 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.task-item:hover {
+    background: #eaeaea;
+}
+
+/* boton para borrar*/
+.delete-btn {
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: #e60000;
+    transform: scale(1.1);
+}
